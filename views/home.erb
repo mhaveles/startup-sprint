@@ -5,28 +5,14 @@
 <% if @error == 'email' %>
   <p style="color: red;">Please enter a valid email</p>
 <% end %>
-<form method=POST action="/subscribe" onsubmit="return ValidateForm()">
+<form method=POST action="/subscribe">
   <label for="full-name">Full Name</label>
   <input type="text" id="full-name" name="full_name" required>
   <label for="email">Email</label>
   <input type="text" id="email" name="email" required>
-  <label for = "city"> City</label>
-  <input type = "text" id ='city' name='city'>
   <input type="Submit">
-
 </form>
 
-
-<script>
-function ValidateForm() {
-  var emailText = document.getElementById("email").value;
-  var re = /(.+)@(.+){2,}\.(.+){2,}/;
-  var pass = re.test(emailText);
-  if (!pass) {
-     alert("Put in a different email");
-  }
-  return pass;
-}
-
-
-</script>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/XGSy3_Czz8k">
+</iframe>
