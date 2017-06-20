@@ -12,3 +12,12 @@
   <input type="text" id="email" name="email" required>
   <input type="Submit">
 </form>
+
+
+<script>
+function ValidateForm() {
+var emailText = document.getElementById("email").value;
+var re = /^(([^<>()[]\.,;:\s@"]+(.[^<>()[]\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
+return re.test(emailText);
+}
+</script>
