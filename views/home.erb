@@ -16,10 +16,13 @@
 
 <script>
 function ValidateForm() {
-var emailText = document.getElementById("email").value;
-var re = /(.+)@(.+){2,}\.(.+){2,}/;
-var pass = re.test(emailText);
-return pass;
+  var emailText = document.getElementById("email").value;
+  var re = /(.+)@(.+){2,}\.(.+){2,}/;
+  var pass = re.test(emailText);
+  if (!pass) {
+     alert("Put in a different email");
+  }
+  return pass;
 }
 
 
